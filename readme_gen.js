@@ -3,8 +3,10 @@
 
 function createReadmeText(input){
     return `# ${input.title}
-    
-    ## Table Of Contents
+    ${input.description}
+
+    ---
+    ### Table Of Contents
     
     
     
