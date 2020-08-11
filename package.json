@@ -1,0 +1,14 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "generates a readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "Chris Faux",
+  "license": "ISC"
+}
