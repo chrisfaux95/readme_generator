@@ -45,15 +45,21 @@ ${licenseInfo(input)}
 }
 
 function licenseInfo(input) {
-    let l;
-    switch(input.license) {
+    let licenseURL = "";
+    switch (input.license) {
         case 'MIT':
+            licenseURL = 'https://choosealicense.com/licenses/mit/';
             break;
-        case 'GNU':
+        case 'GNU GPLv3':
+            licenseURL = 'https://choosealicense.com/licenses/gpl-3.0/';
+            break;
+        case 'Apache 2.0':
+            licenseURL = 'https://choosealicense.com/licenses/apache-2.0/'
             break;
         default:
-            return null; 
+            licenseURL: 'INSERT LICENSE URL HERE';
     }
+    return `This project licensed under the [${input.license}](${licenseURL}) license.`
 }
 
 function contactInfo(input) {
