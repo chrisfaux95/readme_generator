@@ -2,7 +2,8 @@ licenseList = [
     'MIT',
     'GNU GPLv3',
     'Apache 2.0',
-    'GNU AGPLv3'
+    'GNU AGPLv3',
+    'Other'
 ]
 
 function createReadmeText(input) {
