@@ -52,10 +52,7 @@ var questions = [
         type: 'list',
         name: 'license',
         message: 'What license would you like to use?',
-        choices: [
-            'MIT',
-            'GNU'
-        ]
+        choices: readme_gen.licenseList
     }
 ]
 
