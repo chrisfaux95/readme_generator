@@ -2,6 +2,8 @@ var inquirer = require('inquirer');
 var fs = require('fs');
 const readme_gen = require("./readme_gen.js");
 
+const resultFile = "generated_README"
+
 var questions = [
     {
         type: 'input',
@@ -67,7 +69,7 @@ function writeToFile(filename, input){
 }
 
 function init() {
-    inquirer.prompt(questions).then(answers => writeToFile('test', answers));
+    inquirer.prompt(questions).then(answers => writeToFile(resultFile, answers));
 }
 
 init();
