@@ -43,6 +43,12 @@ It will generate a Markdown file filled in with that information.
 
 The resulting file will be written to [generated_README.md]() in the local directory.
 
+As an example, this input:
+![commandlineinput](assets/images/input.png)
+
+Will result in the following:
+[![Output README](assets/images/result.png)](generated_README.md)
+
 
 ## Contributing
 
