@@ -2,7 +2,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require("util");
 const readme_gen = require("./readme_gen.js");
-// const { createReadmeText } = require('./readme_gen.js');
 
 const filename = "generated_README"
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -48,12 +47,6 @@ var questions = [
         name: 'contribute',
         message: 'Instructions for contributing?'
     },
-    // {
-    //     type: 'list',
-    //     name: 'language',
-    //     message: "What are you coding this in?",
-    //     choices: ['JS', 'Python', 'Full Web', 'Java', 'Ruby']
-    // },
     {
         type: 'list',
         name: 'license',
@@ -62,18 +55,6 @@ var questions = [
     }
 ]
 
-// inquirer.prompt(questions).then((answers) => console.log(readme_gen.createReadmeText(answers)))
-
-function writeToFile(filename, input){
-    fs.writeFile(`./${filename}.md`, readme_gen.createReadmeText(input), err => {
-        if (err) throw err;
-        console.log('Saved!')
-    });
-}
-
-// function init() {
-//     inquirer.prompt(questions).then(answers => writeToFile(resultFile, answers));
-// }
 
 async function init(){
     try {
