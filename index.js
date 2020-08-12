@@ -66,3 +66,8 @@ function writeToFile(filename, input){
     });
 }
 
+function init() {
+    inquirer.prompt(questions).then(answers => writeToFile('test', answers));
+}
+
+init();
