@@ -1,5 +1,5 @@
-var inquirer = require('inquirer');
-var fs = require('fs');
+const inquirer = require('inquirer');
+const fs = require('fs');
 const readme_gen = require("./readme_gen.js");
 
 const resultFile = "generated_README"
