@@ -59,4 +59,4 @@ var questions = [
     }
 ]
 
-inquirer.prompt(questions).then((answers) => console.log(createReadmeText(answers)))
+inquirer.prompt(questions).then((answers) => console.log(readme_gen.createReadmeText(answers)))
