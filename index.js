@@ -1,8 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require("util");
 const readme_gen = require("./readme_gen.js");
+// const { createReadmeText } = require('./readme_gen.js');
 
-const resultFile = "generated_README"
+const filename = "generated_README"
+const writeFileAsync = util.promisify(fs.writeFile);
 
 var questions = [
     {
@@ -68,8 +71,19 @@ function writeToFile(filename, input){
     });
 }
 
-function init() {
-    inquirer.prompt(questions).then(answers => writeToFile(resultFile, answers));
+// function init() {
+//     inquirer.prompt(questions).then(answers => writeToFile(resultFile, answers));
+// }
+
+async function init(){
+    try {
+        let answers = await inquirer.prompt(questions);
+        let text = readme_gen.createReadmeText(answers);
+        await writeFileAsync(filename + ".md", text);
+        console.log(`Successfully wrote to ${filename}.md`)
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 init();
