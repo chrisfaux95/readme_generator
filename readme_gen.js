@@ -9,33 +9,43 @@ function createReadmeText(input) {
     return `
 # ${input.title}
 ${createBadge(input)}
+
+
 ${input.description}
+
 ---
 ### Table Of Contents
  
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [License](#license)
 * [Contact](#contact)
-
+* [License](#license)
 ---
 
 ## Installation
  
 ${input.install} 
 
+---
+
 ## Usage
 
 ${input.usage}
+
+---
 
 ## Contributing
 
 ${input.contribute}
 
+---
+
 ## Contact
 
 ${contactInfo(input)}
+
+---
 
 ## License
 
