@@ -1,5 +1,5 @@
-var inquirer = require('inquirer')
-const createReadmeText = require('./readme_gen')
+var inquirer = require('inquirer');
+const readme_gen = require("./readme_gen.js");
 
 var questions = [
     {
