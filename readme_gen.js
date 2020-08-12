@@ -8,7 +8,7 @@ licenseList = [
 function createReadmeText(input) {
     return `
 # ${input.title}
-![License Info](https://img.shields.io/endpoint)
+${createBadge(input)}
 ${input.description}
 ---
 ### Table Of Contents
@@ -66,5 +66,8 @@ function contactInfo(input) {
     `
 }
 
+function createBadge(input) {
+    return `![LicenseBadge](https://img.shields.io/badge/License-${input.license}-lightgrey)`
+}
 
 module.exports = { createReadmeText: createReadmeText, licenseList: licenseList };
