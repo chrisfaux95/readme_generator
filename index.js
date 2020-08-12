@@ -57,4 +57,12 @@ var questions = [
     }
 ]
 
-inquirer.prompt(questions).then((answers) => console.log(readme_gen.createReadmeText(answers)))
+// inquirer.prompt(questions).then((answers) => console.log(readme_gen.createReadmeText(answers)))
+
+function writeToFile(filename, input){
+    fs.writeFile(`./${filename}.md`, readme_gen.createReadmeText(input), err => {
+        if (err) throw err;
+        console.log('Saved!')
+    });
+}
+
