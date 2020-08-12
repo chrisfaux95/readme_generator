@@ -40,6 +40,19 @@ ${licenseInfo(input)}
 `
 }
 
-    
+function licenseInfo(input) {
+    let l;
+    switch(input.license) {
+        case 'MIT':
+            break;
+        case 'GNU':
+            break;
+        default:
+            return null; 
+    }
+}
+
+function contactInfo(input) {
+    return ` You can contact me at ${input.email}
     `
 }
