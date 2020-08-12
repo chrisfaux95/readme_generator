@@ -28,6 +28,19 @@ node index
 ```
  will start prompting the user for inputs to create the README.
 
+You will be prompted for the following items:
+* Name.
+* Github Username
+* Email
+* Project/Repo Title
+* Description
+* Installation Instructions
+* Usage Instructions
+* Contribution Instructions
+* Choosing a License from a list of a few.
+
+It will generate a Markdown file filled in with that information.
+
 The resulting file will be written to [generated_README.md]() in the local directory.
 
 
