@@ -28,11 +28,26 @@ var questions = [
         message: "What is your project?"
     },
     {
-        type: 'list',
-        name: 'language',
-        message: "What are you coding this in?",
-        choices: ['JS', 'Python', 'Full Web', 'Java', 'Ruby']
+        type: 'input',
+        name: 'install',
+        message: 'Instructions for installation?'
     },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Instructions for usage?'
+    },
+    {
+        type: 'input',
+        name: 'contribute',
+        message: 'Instructions for contributing?'
+    },
+    // {
+    //     type: 'list',
+    //     name: 'language',
+    //     message: "What are you coding this in?",
+    //     choices: ['JS', 'Python', 'Full Web', 'Java', 'Ruby']
+    // },
     {
         type: 'list',
         name: 'license',
