@@ -56,3 +56,5 @@ function contactInfo(input) {
     return ` You can contact me at ${input.email}
     `
 }
+
+module.exports = createReadmeText;
