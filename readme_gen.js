@@ -61,4 +61,5 @@ function contactInfo(input) {
     `
 }
 
-module.exports = createReadmeText;
+module.exports = { createReadmeText: createReadmeText, licenseList: licenseList };
+
