@@ -1,4 +1,5 @@
 var inquirer = require('inquirer');
+var fs = require('fs');
 const readme_gen = require("./readme_gen.js");
 
 var questions = [
