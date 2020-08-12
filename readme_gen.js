@@ -62,8 +62,9 @@ function licenseInfo(input) {
 }
 
 function contactInfo(input) {
-    return ` You can contact me at ${input.email}
+    return `If you have any questions or are interested in this project, you can contact me, ${input.name}, at ${input.email}.  Or if you feel so inclined, check out my Github profile: [${input.username}](https:/github.com/${input.username}).
     `
 }
+
 
 module.exports = { createReadmeText: createReadmeText, licenseList: licenseList };
